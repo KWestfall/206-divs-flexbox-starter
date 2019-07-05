@@ -108,11 +108,43 @@ body {
   height: 100%;
 }
 
+
+header, main, footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+  overflow: auto;
+  color: #b8b894;
+
+}
+
+header {
+  font-size: 2em;
+  height:20%;
+  width: 100%;
+}
+
+header span {
+  color: hotpink;
+}
+
+main {
+  font-size: 1.5em;
+  height:25%;
+  width: 100%;
+  padding-bottom: 1em;
+}
+
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   display: flex;
   justify-content: space-between;
+  flex-flow: row wrap;
   font-weight: 700;
+  border-top: .12em solid #b8b894;
+  border-bottom: .12em solid #b8b894;
+
 }
 
 .div-1, .div-2, .div-3 {
@@ -122,21 +154,26 @@ body {
   justify-content:center;
   align-items: center;
   text-align: center;
-  color: 	 #b8b894;
+  color: #b8b894;
   line-height: 1.5em;
   font-size: 1em;
   height:100%;
   margin: 2em 0;
 
+
 }
 
 .div-2 {
-  border-left: 2px solid #b8b894;
-  border-right: 2px solid #b8b894;
+  border-left: .12em solid #b8b894;
+  border-right: .12em solid #b8b894;
   padding-left: 1em;
   padding-right: 1em;
 }
-
+footer {
+  font-size: .75em;
+  height: 20%;
+  width: 100%;
+}
 
 /* ==========================================================================
    Helper classes
